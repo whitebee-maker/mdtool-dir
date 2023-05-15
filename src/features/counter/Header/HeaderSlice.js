@@ -9,10 +9,14 @@ export const headerSlice = createSlice({
     name: 'header',
     initialState,
     reducers: {
-
-    }
+        selectFilePath: (state, action) => {
+            state.value = action.payload
+        },
+    },
 });
 
-export const {} = headerSlice.actions;
+export const { selectFilePath } = headerSlice.actions;
+
+export const selectInputPath = state.header.value;
 
 export default counterSlice.reducers;
