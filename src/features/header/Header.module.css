@@ -1,0 +1,12 @@
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* 您可以根据需要调整高度 */
+    background-color: #f0f0f0; /* 您可以根据需要调整背景颜色 */
+}
+
+.inputField {
+    margin-right: 10px;
+    width: 300px;
+}
