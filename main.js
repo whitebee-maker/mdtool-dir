@@ -26,7 +26,7 @@ function createWindow() {
 async function handleFileOpen() {
     const {canceled, filePaths} = await dialog.showOpenDialog({
         properties:['openDirectory', 'openFile']});
-    if (!canceled) {
+    if (!canceled && filePaths.length > 0) {
         return filePaths[0];
     }
 }
